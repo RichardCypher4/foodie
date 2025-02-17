@@ -1,0 +1,100 @@
+/* Container: dark brown background */
+.contact-container {
+    background-color: #3b1c00;
+    color: #fff;
+    padding: 40px 20px;
+    
+  }
+  
+  /* ---------- CONTACT CARDS SECTION ---------- */
+  .contact-cards {
+    display: grid;
+    gap: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+  
+    /* Single column on small screens */
+    grid-template-columns: 1fr;
+  
+    /* 3 columns on tablet+ */
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .contact-card {
+    background-color: #fdf8e7; /* Cream color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #333; /* Dark text on cream background */
+  
+    .contact-icon {
+      font-size: 2rem;
+      color: #d4a017; /* Golden accent */
+      margin-bottom: 10px;
+    }
+  
+    h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+  
+    p {
+      margin: 5px 0;
+      line-height: 1.4;
+    }
+  }
+  
+  /* ---------- CONTACT FORM SECTION ---------- */
+  .contact-form-container {
+    max-width: 600px;
+    margin: 0 auto; /* Center form on page */
+    background-color: #3b1c00; /* Same as container, or slightly darker if you prefer */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  
+      label {
+        font-weight: 600;
+      }
+  
+      input,
+      textarea {
+        background-color: #2a1500; /* Slightly darker brown inside the form fields */
+        border: 1px solid #fff;    /* White border for visibility */
+        color: #fff;              /* White text */
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+  
+        &::placeholder {
+          color: #ccc;
+        }
+      }
+  
+      /* Submit Button */
+      button {
+        background-color: black;
+        color: #fff;
+        border: none;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #b98f15;
+        }
+      }
+    }
+  }
